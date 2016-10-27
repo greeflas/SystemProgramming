@@ -32,6 +32,7 @@ namespace _01_Threading
             thread.Start();
             Console.WriteLine("Start: {0}\n", thread_id);
 
+            thread.Join();
             for (int i = 0; i < 160; i++)
             {
                 Thread.Sleep(20);
